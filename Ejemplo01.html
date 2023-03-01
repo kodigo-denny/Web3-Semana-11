@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Test{
+            num
+
+            constructor(num){
+                this.num = num
+            }
+        }
+        /*let a = 10
+        let b = 20
+        a = b
+        b = 40
+
+        console.log(a)*/
+
+        let a = new Test(20)
+        let b = new Test(a.num)
+
+        a.num = 10
+        b.num = 5
+
+        console.log(a.num)
+        console.log(b.num)
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
